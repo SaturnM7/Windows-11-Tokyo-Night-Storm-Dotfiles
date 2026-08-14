@@ -5,8 +5,7 @@
    ██║      ██║    ╚████╔╝ 
    ██║      ██║     ╚██╔╝  
    ██║      ██║      ██║   
-   ╚═╝      ╚═╝      ╚═╝   
-                           
+   ╚═╝      ╚═╝      ╚═╝                         
 ```
 A complete Windows 11 desktop customization (rice) themed around the Storm variant of the popular Tokyo Night color palette.
 
