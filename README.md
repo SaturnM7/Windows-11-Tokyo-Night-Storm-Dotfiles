@@ -38,7 +38,7 @@ The following core applications are required for this setup to function properly
 * **[cava](https://github.com/karlstav/cava)**
 * **[Winfetch](https://github.com/lptstr/winfetch)**
 
-> **Important:** Download the recommended applications directly from their official websites. Avoid using the Microsoft Store, as store-packaged apps can restrict custom theming.
+> **Important:** Download the recommended applications directly from their official websites or via a package manager such as winget or scoop. Avoid using the Microsoft Store, as store-packaged apps can restrict custom theming.
 
 ---
 
