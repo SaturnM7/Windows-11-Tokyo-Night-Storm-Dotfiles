@@ -1,0 +1,22 @@
+add_newline = false
+
+format = """
+╭── $username$directory
+│
+╰─$character"""
+
+[username]
+show_always = true
+style_user = "bold white"
+style_root = "bold red"
+format = "[$user]($style)"
+
+[directory]
+style = "bold white"
+format = " [$path]($style) "
+truncation_length = 3
+truncation_symbol = "…/"
+
+[character]
+success_symbol = "[ \\$ ](bold white)"
+error_symbol = "[ \\$ ](bold red)"
