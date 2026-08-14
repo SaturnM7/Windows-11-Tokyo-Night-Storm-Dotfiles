@@ -26,9 +26,9 @@ The following core applications are required for this setup to function properly
 
 ---
 
-## Important Configuration
+## Important Configuration for Wallpapers
 
-Before launching, you must update a file path to match your system directory:
+Before launching YASB, you must update a file path to match your wallpaper directory:
 
 1. Open the **YASB** configuration file (`config.yaml`).
 2. Navigate to **line 475**.
