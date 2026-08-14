@@ -52,11 +52,11 @@ Before using YASB, Fastfetch and Winfetch you must update the file paths to matc
 
 **Fastfetch**
 1. Open the configuration file (`config.jsonc`).
-2. Change the file path to your desired (`ascii.txt`).
+2. Change the file path to your desired `ascii.txt`.
 
 **Winfetch**
 1. Open the configuration file (`config.ps1`).
-2. Change the file path to your desired (`image.png`).
+2. Change the file path to your desired `image.png`.
 ---
 
 ## Keybinds
