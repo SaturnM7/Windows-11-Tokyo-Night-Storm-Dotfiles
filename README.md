@@ -1,16 +1,51 @@
-# Windows-11-Tokyo-Night-Storm-Dotfiles
-Complete Windows 11 Rice themed using the Storm variant of the popular Tokyo Night Palette
-Dependencies for this to work:
-Windows Terminal, windows powershell, glazeWM, Yasb, Nilesoft Shell
-Recommended: Firefox, Discord, VSCodium, Sunlime Text, Spotify, (Download directly from their website instead of using the Microsoft Store)
+# Windows 11 Tokyo Night Storm Dotfiles
 
-Important:
-Change line 475 of the YASB config.yaml in order for the wallpaper switcher to point to the correct directory
+A complete Windows 11 desktop customization (rice) themed around the Storm variant of the popular Tokyo Night color palette.
 
-Keybinds:
-Alt + q to close applications
-Alt + s to launch terminal
-Alt + w for wallpapers
-Alt + c for app launcher
-Alt + y for shutdown menu
-The rest are default GlazeWM keybindings
+---
+
+## Dependencies and Requirements
+
+The following core applications are required for this setup to function properly:
+
+### Required Core Apps
+* **Windows Terminal** – Used as the primary terminal emulator.
+* **Windows PowerShell** – Used as the default shell.
+* **GlazeWM** – Used for tiling window management.
+* **YASB (Yet Another Status Bar)** – Used for the desktop status bar.
+* **Nilesoft Shell** – Used for the customized context menu.
+
+### Recommended Apps (For a unified theme)
+* **Firefox**
+* **Discord**
+* **VSCodium**
+* **Sublime Text**
+* **Spotify + Spicetify**
+
+> **Important:** Download the recommended applications directly from their official websites. Avoid using the Microsoft Store, as store-packaged apps can restrict custom theming.
+
+---
+
+## Important Configuration
+
+Before launching, you must update a file path to match your system directory:
+
+1. Open the **YASB** configuration file (`config.yaml`).
+2. Navigate to **line 475**.
+3. Change the path so the **wallpaper switcher** points to your correct local wallpaper directory.
+
+---
+
+## Keybinds
+
+This setup introduces custom shortcuts alongside the default GlazeWM keybindings.
+
+| Keybind | Action |
+| :--- | :--- |
+| <kbd>Alt</kbd> + <kbd>Q</kbd> | Close active application |
+| <kbd>Alt</kbd> + <kbd>S</kbd> | Launch Terminal |
+| <kbd>Alt</kbd> + <kbd>W</kbd> | Open wallpaper switcher |
+| <kbd>Alt</kbd> + <kbd>C</kbd> | Open app launcher |
+| <kbd>Alt</kbd> + <kbd>Y</kbd> | Open shutdown menu |
+
+*Note: Any keybinds not listed above follow the default configuration of **GlazeWM**.*
