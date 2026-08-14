@@ -17,7 +17,6 @@ The following core applications are required for this setup to function properly
 * **[Fastfetch](https://github.com/fastfetch-cli/fastfetch) & [Winfetch](https://github.com/lptstr/winfetch)** – Used to display system statistics aesthetically.
 
 ### Recommended Apps (For a unified theme/Other useful Tools)
-* **Firefox**
 * **[Discord](https://discord.com/) + [Vencord](https://vencord.dev/)**
 * **[VSCodium](https://vscodium.com/)**
 * **[Sublime Text](https://www.sublimetext.com/) (alternative to VSCodium)**
@@ -34,8 +33,7 @@ The following core applications are required for this setup to function properly
 
 ---
 
-## Important Configuration for Wallpapers
-
+## Important Configuration Steps
 Before launching YASB, you must update a file path to match your wallpaper directory:
 
 1. Open the **YASB** configuration file (`config.yaml`).
