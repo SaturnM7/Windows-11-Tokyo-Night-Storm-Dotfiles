@@ -472,7 +472,7 @@ widgets:
     type: "yasb.wallpapers.WallpapersWidget"
     options:
       label: "<span>\U000f0e09</span>"
-      image_path: "C:\\Users\\Saturn\\Pictures\\tokyo_storm"
+      image_path: "C:\\Your\\Path\\to\\Wallpapers"
       tooltip: false
       run_after:
         - "powershell.exe -ExecutionPolicy Bypass -NoProfile -WindowStyle Hidden -Command \"& { . $PROFILE; wallpaper '{image}' -Force }\""
