@@ -57,7 +57,6 @@ Before using YASB, Fastfetch and Winfetch you must update the file paths to matc
 **Winfetch**
 1. Open the configuration file (`config.ps1`).
 2. Change the file path to your desired image.png.
-3. 
 ---
 
 ## Keybinds
