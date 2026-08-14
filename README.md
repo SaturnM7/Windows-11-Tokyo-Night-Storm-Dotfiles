@@ -43,12 +43,21 @@ The following core applications are required for this setup to function properly
 ---
 
 ## Important Configuration Steps
-Before launching YASB, you must update a file path to match your wallpaper directory:
+Before using YASB, Fastfetch and Winfetch you must update the file paths to match your correct directories:
 
+**YASB**
 1. Open the **YASB** configuration file (`config.yaml`).
 2. Navigate to **line 475**.
 3. Change the path so the **wallpaper switcher** points to your correct local wallpaper directory.
 
+**Fastfetch**
+1. Open the configuration file (`config.jsonc`).
+2. Change the file path to your desired ascii.txt.
+
+**Winfetch**
+1. Open the configuration file (`config.ps1`).
+2. Change the file path to your desired image.png.
+3. 
 ---
 
 ## Keybinds
