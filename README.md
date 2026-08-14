@@ -8,12 +8,13 @@ A complete Windows 11 desktop customization (rice) themed around the Storm varia
 
 The following core applications are required for this setup to function properly:
 
-### Required Core Apps
+### Core Apps
 * **Windows Terminal** – Used as the primary terminal emulator.
 * **Windows PowerShell** – Used as the default shell.
 * **GlazeWM** – Used for tiling window management.
 * **YASB (Yet Another Status Bar)** – Used for the desktop status bar.
 * **Nilesoft Shell** – Used for the customized context menu.
+* **Fastfetch & Winfetch** – Used to display system statistics aesthetically.
 
 ### Recommended Apps (For a unified theme)
 * **Firefox**
