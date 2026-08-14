@@ -1,0 +1,1280 @@
+/*  ______      __                  _____ __                     
+  /_  __/___  / /____  ______     / ___// /_____  _________ ___ 
+   / / / __ \/ //_/ / / / __ \    \__ \/ __/ __ \/ ___/ __ `__ \
+  / / / /_/ / ,< / /_/ / /_/ /   ___/ / /_/ /_/ / /  / / / / / /
+ /_/  \____/_/|_|\__, /\____/   /____/\__/\____/_/  /_/ /_/ /_/ 
+                /____/                                           */
+:root {
+
+  /* fonts */
+    --font-bar: "JetBrainsMono NFP";
+    --font-icon: "Segoe Fluent Icons";
+    --font-segoe: "Segoe UI Variable Text";
+    --font-mdl2: "Segoe MDL2 Assets";
+
+  /* Backgrounds (Storm Variant) */
+  --bg0: #24283b;
+  --bg1: #1f2335;
+  --bg2: #3b4261;
+
+  /* Foregrounds */
+  --fg0: #c0caf5;
+  --fg1: #a9b1d6;
+  --fg2: #787c99;
+
+  /* Terminal Colors 0-15 */
+  --color0: #1d202f;  /* Black */
+  --color1: #f7768e;  /* Red */
+  --color2: #9ece6a;  /* Green */
+  --color3: #e0af68;  /* Yellow */
+  --color4: #7aa2f7;  /* Blue */
+  --color5: #bb9af7;  /* Magenta */
+  --color6: #7dcfff;  /* Cyan */
+  --color7: #a9b1d6;  /* White */
+  --color8: #414868;  /* Bright Black */
+  --color9: #FF7A93;  /* Bright Red */
+  --color10: #B9F27C; /* Bright Green */
+  --color11: #FF9E64; /* Bright Yellow */
+  --color12: #7DA6FF; /* Bright Blue */
+  --color13: #BB9AF7; /* Bright Magenta */
+  --color14: #0DB9D7; /* Bright Cyan */
+  --color15: #C0CAF5; /* Bright White */
+
+  /* Backgrounds Raw */
+  --bg0-raw: 36, 40, 59;
+  --bg1-raw: 31, 35, 53;
+  --bg2-raw: 59, 66, 97;
+
+  /* Foregrounds Raw */
+  --fg0-raw: 192, 202, 245;
+  --fg1-raw: 169, 177, 214;
+  --fg2-raw: 120, 124, 153;
+
+  /* Terminal Colors 0-15 Raw */
+  --color0-raw: 29, 32, 47;
+  --color1-raw: 247, 118, 142;
+  --color2-raw: 158, 206, 106;
+  --color3-raw: 224, 175, 104;
+  --color4-raw: 122, 162, 247;
+  --color5-raw: 187, 154, 247;
+  --color6-raw: 125, 207, 255;
+  --color7-raw: 169, 177, 214;
+  --color8-raw: 65, 72, 104;
+  --color9-raw: 247, 118, 142;
+  --color10-raw: 158, 206, 106;
+  --color11-raw: 224, 175, 104;
+  --color12-raw: 122, 162, 247;
+  --color13-raw: 187, 154, 247;
+  --color14-raw: 125, 207, 255;
+  --color15-raw: 192, 202, 245;
+
+}
+
+
+* {
+    font-family: var(--font-bar);
+    font-size: 12px;
+    text-shadow: 0 0 12px #000;
+}
+
+
+/* YASB */
+.yasb-bar {
+    background-color: var(--bg1);
+    opacity: 1;
+    border-radius: 0px;
+    padding-left: 2px;
+    padding-right: 2px;
+    border-top: 1px solid var(--bg2);
+}
+
+/* Widget Base */
+.widget {
+    min-width: 32px;
+    border-radius: 0px;
+    margin: 0px 1px 0px 1px;
+    opacity: 1;
+}
+
+.icon {
+    min-width: 32px;
+    max-width: 320px;
+    font-size: 16px;
+    opacity: 1;
+
+}
+.label {
+    font-weight: bold;
+
+}
+
+/* Start Menu Button */
+.start-button .label {
+    font-size: 20px;
+    font-family: var(--font-bar);
+    cursor: pointer;
+    color: var(--fg0);
+}
+
+/* System Tray */
+.systray {
+    background: transparent;
+    border: none;
+    margin: 0;
+}
+.systray .unpinned-container {
+    background: transparent;
+}
+.systray .pinned-container {
+    background: transparent;
+}
+.systray .button {
+    border-radius: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.systray .button.drag-over {
+     background: rgba(255, 255, 255, 0.4);
+}
+
+.systray .pinned-container.drop-target {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.systray .unpinned-visibility-btn {
+    color: var(--fg0);
+    font-size: 18px;
+    transition: all 0.25s ease;
+    border-radius: 0px;
+    padding: 2px 2px 2px 2px;
+    margin-left: 0px;
+}
+.systray .unpinned-visibility-btn:checked {
+    background: transparent;
+    color: var(--fg0);
+}
+
+.systray .unpinned-visibility-btn:hover {
+    background: rgba(var(--bg2-raw), 0.6);
+    color: var(--color2);
+    cursor: pointer;
+}
+
+
+.systray-popup .button.drag-over {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.systray .pinned-container.pinned-container.drop-target {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.systray-popup {
+    background-color: var(--bg1);
+    padding: 4px;
+    border-radius: 0px;
+    border: 1px solid var(--bg2);
+}
+.systray-popup .button {
+    padding: 10px;
+    margin: 0px;
+    border: 0;
+    border-radius: 0px;
+    transition: background-color 0.2s ease;
+}
+.systray-popup .button:hover {
+    background-color: rgba(var(--bg2-raw), 0.8);
+}
+
+/* Taskbar */
+
+.taskbar-widget .app-container {
+    margin: 4px 0px 6px 4px;
+    border-radius: 0px;
+    padding: 0 14px;
+}
+.taskbar-widget .app-container .app-title {
+    font-weight: bold;
+}
+.taskbar-widget .app-container.foreground {
+    padding: 0px;
+    margin: 0px 0px 0px 4px;
+    color: var(--bg1);
+    border-bottom: 2px solid var(--fg0);
+}
+.taskbar-widget .app-container.foreground .app-title {
+    background-color: var(--fg0);
+    margin: 4px 0px 4px 0px;
+    padding: 4px 15px 4px 15px;
+    color: var(--bg1);
+    font-weight: bold;
+}
+.taskbar-widget .app-container.flashing {
+    background-color: rgba(var(--color1-raw), 0.6);
+}
+.taskbar-widget .app-container.running {
+    background-color: var(--bg0);
+    border-radius: 0px;
+    transition: background-color 0.2s ease;
+}
+
+.taskbar-widget .app-container.running:hover {
+    background-color: var(--bg2);
+}
+
+.taskbar-widget .app-container .app-title {
+    padding-left: 4px;
+    color: var(--fg1);
+}
+
+/* Taskbar preview popup is very limited in styling options, do not use margins/paddings here */
+.taskbar-preview {
+    border-radius: 0px; 
+    background-color: var(--bg1); 
+    transition: background-color 0.25s ease;
+}
+.taskbar-preview:hover {
+    border-radius: 0px; 
+    background-color: var(--bg2); 
+}
+.taskbar-preview.flashing { 
+    background-color: rgba(var(--color1-raw), 0.6);
+}
+.taskbar-preview .header {
+    padding-bottom: 12px;
+    padding-top: 4px;
+}
+.taskbar-preview .header .title {
+    color: var(--fg2);
+    font-family: var(--font-bar);
+    font-weight: 600;
+    font-size: 14px;
+}
+.taskbar-preview .close-button {
+    color: var(--fg0);
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    min-width: 20px;
+    border-radius: 4px;
+    min-height: 20px;
+}
+.taskbar-preview .close-button:hover {
+    color: var(--fg0);
+    background-color: var(--color1);
+}
+
+
+
+/* Home Widget */
+.home-widget {
+    transition: background-color 0.25s ease;
+    cursor: pointer;  
+    border: none; 
+    margin: 2px 0px 2px 0px;
+}
+.home-widget:hover {
+    background-color: rgba(var(--bg2-raw), 0.5);
+}
+.home-widget .label {
+    color: var(--fg1);
+    transition: color 0.25s ease;
+    font-size: 20px;
+}
+.home-widget .label:hover {
+    color: var(--color4);
+}
+
+.home-menu {
+    background-color: var(--bg1);
+    border-radius: 0px;
+    padding: 20px;
+    border: 1px solid var(--bg2);
+    min-width: 180px;
+}
+.home-menu .menu-item {
+  padding: 8px 32px 10px 8px;
+  margin: 4px 4px 4px 4px;
+  border-radius: 0px;
+  color: var(--fg0);
+  font-size: 14px;
+  background-color: transparent;
+  font-family: var(--font-bar);
+  cursor: pointer;
+  transition: background-color 0.1s ease;
+  border-bottom: none;
+}
+
+.home-menu .menu-item:hover {
+  background-color: rgba(var(--bg2-raw), 0.5);
+}
+
+/* Cava Widget */
+.cava-widget {
+    padding: 0px;
+    margin-right: 2px;
+}
+
+/* Context Menu */
+.context-menu {
+  background-color: var(--bg0);
+  color: var(--fg1);
+  font-family: var(--font-segoe);
+  font-size: 12px;
+  border: 1px solid var(--bg1);
+  padding: 4px 0px;
+  border-radius: 0px;
+}
+
+
+.context-menu .menu-checkbox {
+  background-color: var(--bg1);
+  color: var(--fg1);
+}
+
+.context-menu::right-arrow {
+    width: 8px;
+    height: 8px;
+    padding-right: 24px;
+}
+.context-menu::item,
+.context-menu .menu-checkbox {
+    background-color: transparent;
+    padding: 4px 8px;
+    margin: 0px 6px;
+    border-radius: 0px;
+}
+.context-menu::item:selected,
+.context-menu .menu-checkbox:hover {
+    background-color: rgba(var(--bg2-raw), 0.3);
+    color: var(--fg1);
+}
+.context-menu::separator {
+    height: 1px;
+    background-color: var(--bg1);
+    margin: 4px 8px;
+}
+.context-menu::item:disabled {
+    color: var(--color7);
+    background-color: transparent;
+}
+.context-menu .menu-checkbox .checkbox {
+    border: none;
+    padding: 4px 12px;
+    font-size: 12px;
+    margin: 0;
+    color: var(--fg2);
+    font-family: var(--font-bar);
+}
+
+.context-menu .submenu {
+    color: var(--fg1);
+    font-family: var(--font-segoe);
+}
+
+.context-menu .submenu::item:disabled {
+    margin: 0;
+    padding-left: 16px;
+} 
+.context-menu .menu-checkbox .checkbox:unchecked {
+    color: var(--fg2);
+}
+.context-menu .menu-checkbox .checkbox:checked {
+    color: var(--fg1);
+}
+.context-menu .menu-checkbox .checkbox::indicator {
+    width: 12px;
+    height: 12px;
+    margin-left: 0px;
+    margin-right: 8px;
+}
+.context-menu .menu-checkbox .checkbox::indicator:unchecked {
+    background: var(--bg1);
+    border-radius: 0px;
+}
+.context-menu .menu-checkbox .checkbox::indicator:checked {
+    background: var(--fg0);
+    border-radius: 0px;
+}
+.context-menu .menu-checkbox .checkbox:focus {
+    outline: none;
+}
+
+/* Separator (optional) */
+.separator-widget .label {
+    color: var(--fg0);
+    margin: 0px;
+    padding: 0px;
+}
+.separator-widget {
+    margin: 0px;
+    padding: 0px;
+}
+ /* Tooltip */
+.tooltip {
+    background-color: var(--bg1);
+    border: 1px solid var(--bg2);
+    border-radius: 0px;
+    color: var(--fg0);
+    padding: 6px 12px;
+    font-size: 12px;
+    font-family: var(--font-bar);
+    font-weight: 600;
+    margin-top: 4px;
+    opacity: 1;
+}
+
+
+
+
+
+/* Wifi Menu */
+ .wifi-menu {
+    background-color: var(--bg1);
+    min-height: 380px;
+    min-width: 320px;
+    max-width: 320px;
+    padding: 0px;
+    border-radius: 0px;
+    border: 1px solid var(--bg2);
+}
+
+.wifi-menu .progress-bar {
+    min-height: 2px;
+    color: var(--fg0); 
+    border-radius: 0px;
+}
+
+ .wifi-menu .header {
+    font-family: var(--font-bar);
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0px 0px 0px 0px; 
+    padding: 8px;
+    background-color: transparent;
+    color: var(--fg0);
+    border-bottom: none;
+}
+
+ .wifi-menu .error-message {
+    font-family: var(--font-bar);
+    font-size: 14px;
+    font-weight: 600;
+    padding: 4px 8px;
+    background-color: var(--bg0);
+    color: var(--color1);
+    border: 1px solid var(--bg2);
+    margin-bottom: 8px;
+}
+
+ .wifi-menu .wifi-list {
+    background-color: transparent;
+    border-radius: 0px;
+    margin: 0;
+    border-right: 1px solid var(--bg2);
+}
+
+ .wifi-menu .wifi-item {
+    min-height: 40px;
+    font-weight: 600;
+    background-color: var(--bg0);
+    border-radius: 0px;
+    margin-right: 12px;
+    margin-left: 9px;
+    transition: background-color 0.2s ease, margin-left 0.25s ease;
+    margin-bottom: 6px;
+}
+
+ .wifi-menu .wifi-item:hover {
+    background-color: rgba(var(--bg2-raw), 0.5);
+}
+
+ .wifi-menu .wifi-item[active=true] {
+    font-size: 14px;
+    border-radius: 0px;
+    min-height: 60px;
+}
+
+
+ .wifi-menu .wifi-item .icon {
+    font-family: var(--font-icon);
+    background-color: transparent;
+    color: var(--fg0);
+    font-size: 26px;
+    border-radius: 0px;
+    margin: 1px 1px 1px 1px;
+    padding: 6px 6px 6px 6px;
+}
+
+ .wifi-menu .wifi-item .name {
+    font-family: var(--font-bar);
+    font-size: 14px;
+    font-weight: 600;
+    padding-left: 2px;
+    color: var(--fg0);
+}
+
+ .wifi-menu .wifi-item .status {
+    font-family: var(--font-bar);
+    color: var(--fg1);
+    font-size: 12px;
+    text-align: right;
+    padding: 4px 4px 4px 4px;
+}
+
+ .wifi-menu .wifi-item .strength {
+    font-family: var(--font-bar);
+    color: var(--fg2);
+    padding: 4px 4px 4px 4px;
+    font-size: 12px;
+    text-align: right;
+    opacity: 0.7;
+}
+
+ .wifi-menu .wifi-item .password {
+    font-family: var(--font-bar);
+    border: none;
+    border-radius: 10px;
+    background-color: transparent;
+    padding: 6px;
+    margin-top: 5px;
+    margin-left: 2px;
+    font-size: 14px;
+    color: var(--color7);
+}
+
+
+ .wifi-menu .wifi-item .connect {
+    background-color: var(--fg0);
+    margin: 4px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 0px;
+    outline: none;
+    font-size: 14px;
+    color: var(--bg0);
+    transition: padding 0.25s ease;
+}
+
+ .wifi-menu .wifi-item .connect:hover {
+    cursor: pointer;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+ .wifi-menu .wifi-item .connect:pressed {
+    background-color: var(--fg1);
+}
+
+ .wifi-menu .footer {
+    align-items: center;
+    padding: 12px 16px;
+    background-color: transparent;
+    border-top: 1px solid var(--bg2);
+}
+
+ .wifi-menu .footer .settings-button {
+    font-family: var(--font-bar);
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    color: var(--fg1);
+    cursor: pointer;
+}
+
+ .wifi-menu .footer .refresh-icon {
+    font-size: 14px;
+    font-family: var(--font-icon);
+    font-weight: 400;
+    background-color: var(--bg0);
+    border: none;
+    border-radius: 0px;
+    min-width: 32px;
+    min-height: 32px;
+    color: var(--fg1);
+    transition: color 0.25s ease;
+}
+
+ .wifi-menu .footer .refresh-icon:hover {
+    color: var(--fg0);
+    cursor: pointer;
+}
+
+
+/* Applications Widget */
+ .apps-widget {
+    background-color: transparent;
+    border-radius: 0px;
+    margin-left: 0px;
+    margin: 0px;
+}
+ .apps-widget .widget-container {
+    cursor: pointer;
+}
+
+ .apps-widget .widget-container .label {
+    background-color: transparent;
+    margin: 0px;
+    border-radius: 0px;
+    padding-left: 2px;
+    padding-right: 2px;
+    font-size: 16px;
+    color: var(--fg0);
+} 
+
+
+
+/* Clock Widget */
+ .clock-widget {
+    transition: background-color 0.25s ease;
+    cursor: pointer;
+    background-color: transparent;
+    padding-right: 4px;
+}
+
+ .clock-widget .label {
+    font-weight: 600;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    color: var(--fg0);;
+    padding: 0 0px;
+}
+
+
+ .clock-widget .icon {
+    font-size: 50px;
+    margin: -4 -1px;
+    padding: 0;
+    font-weight: 600;
+    color: var(--color1)
+}
+
+ .clock-widget .label.alt {
+    font-size: 12px;
+}
+
+ .clock-widget:hover {
+    background-color: var(--color3t33);
+}
+
+
+/* Volume Widget */
+ .volume-widget {
+    transition: background-color 0.25s ease;
+    cursor: pointer;
+    border: none;
+    margin: 2px 0px; 
+    background-color: transparent;
+    border-radius: 0px;
+    padding-right: 0px;
+}
+ .volume-widget .label {
+    color: var(--fg1);
+    font-size: 12px;
+    padding-right: 8px;
+}
+ .volume-widget .icon {
+    color: var(--fg0);
+    background-color: transparent;
+    border-radius: 0px;
+    margin: 0px;
+    transition: color 0.2s ease;
+}
+ .volume-widget .icon:hover {
+    color: var(--color4);
+}
+ .volume-widget:hover {
+    background-color: rgba(var(--bg2-raw), 0.5);
+}
+ .audio-menu {
+    background-color: var(--bg1);
+    border: 1px solid var(--bg2);
+    border-radius: 0px;
+}
+ .audio-menu .audio-container .device {
+    margin-bottom: 8px;
+    padding: 8px 8px;
+    border: none;
+    border-radius: 0px;
+    background-color: var(--bg0);
+    font-family: var(--font-bar);
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+    color: var(--fg0);
+}
+ .audio-menu .audio-container .device:hover {
+    background-color: rgba(var(--bg2-raw), 0.5);
+}
+ .audio-menu .audio-container .device.selected {
+    border: 1px solid var(--bg2);
+    background-color: var(--fg0);
+    color: var(--bg1);
+}
+ .audio-menu .system-volume-container .volume-slider {
+    margin-right: 8px;
+}
+ .audio-menu .system-volume-container .volume-slider::groove,
+ .audio-menu .apps-container .app-volume .app-slider::groove {
+    height: 4px;
+    background-color: rgba(var(--bg2-raw), 0.5);
+}
+ .audio-menu .system-volume-container .volume-slider::groove:hover,
+ .audio-menu .apps-container .app-volume .app-slider::groove:hover {
+    height: 6px;
+    background-color: rgba(var(--bg2-raw), 0.7);
+}
+ .audio-menu .system-volume-container .volume-slider::sub-page,
+ .audio-menu .apps-container .app-volume .app-slider::sub-page {
+    background-color: var(--color4);
+}
+ .audio-menu .toggle-apps {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 0px;
+    outline: none;
+    background-color: var(--bg0);
+    color: var(--fg0);
+    transition: background-color 0.25s ease;
+}
+ .audio-menu .toggle-apps:hover {
+    background-color: rgba(var(--bg2-raw), 0.25);
+}
+ .audio-menu .toggle-apps.expanded {
+    background-color: rgba(var(--bg2-raw), 0.8);
+}
+ .audio-menu .apps-container .app-volume .app-icon-container {
+    margin: 8px 8px 4px 0;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--bg0);
+    transition: background-color 0.25s ease;
+}
+
+/* GlazeWM Workspaces Widget */
+ .glazewm-workspaces {
+    padding:  0 4px;
+    transition: background-color 0.25s ease;
+    cursor: pointer;
+    border: none; 
+    background-color: transparent;
+    margin: 0px 0 0px 2;
+}
+
+
+ .glazewm-workspaces .ws-btn {
+    font-size: 16px;
+    margin: 0 0px;
+    width: 14px;
+    height: 14px;
+    border-radius: 0px;
+    color: var(--fg0);
+    padding-bottom: 0px;
+    padding: 0 1px 0 1px;
+}
+
+
+
+
+ .glazewm-workspaces .ws-btn.populated {
+    color: var(--fg1);
+}
+ .glazewm-workspaces .ws-btn.empty {
+    color: var(--fg2);
+}
+
+
+ .glazewm-workspaces .ws-btn.active_populated,
+ .glazewm-workspaces .ws-btn.active_empty {
+    border-bottom: 2px solid var(--fg0);
+    color: var(--fg0);
+    margin-top: 7px;
+    padding: 0 1px 6px 1px;
+
+}
+
+ .glazewm-workspaces .offline-status {
+    font-weight: bold;
+}
+
+/* Active Window Widget */
+ .active-window-widget .widget-container {
+    margin: 2px;
+    padding-left: 0px;
+    margin-right: 0px;
+    border: none;
+    border-radius: 10px;
+}
+ .active-window-widget .widget-container .icon {
+    padding-right: -10px;
+    padding-left: 6px;
+    border-radius: 8px;
+    background-color: var(--bg0);
+
+}
+ .active-window-widget {
+    background-color: var(--color3);
+    margin: 4px 0 4px 2;
+}
+ .active-window-widget .label {
+    color: var(--bg0);
+}
+
+
+/* Media Widget */
+ .media-widget {
+    border: none;
+    border-radius: 0px;
+    background-color: transparent;
+    margin: 0px 4px 0px 0px;
+}
+ .media-widget .label {
+    padding: 0 4px;
+    color: var(--color7);
+}
+ .media-widget .btn.play {
+    color: var(--fg0);
+    padding: 0px 4px;
+    font-size: 20px;
+    background-color: transparent;
+    border-radius: 0px;
+    margin: 2px 0;
+}
+ .media-widget .btn.prev {
+    color: var(--fg0);
+    padding: 0px 4px 0px 4px;
+    font-size: 20px;
+    background-color: transparent;
+    border-radius: 0px;
+    margin: 2px 0 2px 0px;
+}
+ .media-widget .btn.next {
+    color: var(--fg0);
+    padding: 0px 4px 0px 4px;
+    font-size: 20px;
+    background-color: transparent;
+    margin: 2px 0px 2px 0;
+    border-radius: 0px;
+}
+ .media-widget .btn {
+    transition: background-color 0.15s ease, color 0.15s ease;
+}
+ .media-widget .btn:hover {
+    background-color: rgba(var(--bg2-raw), 0.5);
+    color: var(--color12);
+    cursor: pointer;
+}
+
+ .media-widget .progress-bar {
+    border: none;
+    background-color: transparent;
+}
+ .media-widget .progress-bar::chunk {
+    background-color: transparent;
+}
+
+ .media-menu {
+    max-width: 560px;
+    background-color: var(--bg1);
+    border-radius: 0px;
+    border: 1px solid var(--bg2);
+}
+ .media-menu .title,
+ .media-menu .artist,
+ .media-menu .playback-time {
+    font-family: var(--font-bar);
+}
+ .media-menu .title {
+    font-size: 16px;
+    padding-left: 8px;
+    font-weight: bold;
+    color: var(--fg0);
+}
+ .media-menu .artist {
+    color: var(--color7);
+    padding-left: 9px;
+    font-size: 14px;
+    font-weight: bold;
+}
+ .media-menu .btn {
+    min-width: 56px;
+    max-width: 56px;
+    min-height: 40px;
+    max-height: 40px;
+    margin-left: 4px;
+    border: none;
+    border-radius: 0px;
+    background-color: var(--bg0);
+    color: var(--fg0);
+    font-size: 26px;
+    transition: background-color 0.25s ease, color 0.25s ease;
+}
+ .media-menu .btn.prev {
+    margin-left: 14px;
+}
+ .media-menu .btn:hover {
+    color: var(--color12);
+}
+ .media-menu .btn.disabled:hover,
+ .media-menu .btn.disabled {
+    background-color: transparent;
+    color: var(--color7);
+}
+ .media-menu .playback-time {
+    margin: 12px 0 6px;
+    color: var(--fg1);
+}
+ .media-menu .progress-slider::groove {
+    height: 4px;
+    background-color: rgba(var(--bg2-raw), 0.5);
+}
+ .media-menu .progress-slider::groove:hover {
+    height: 6px;
+    background-color: rgba(var(--bg2-raw), 0.7);
+}
+ .media-menu .progress-slider::sub-page {
+    background-color: var(--color12);
+}
+ .media-menu .source {
+    margin-left: 4px;
+    padding: 12px 10px;
+    border-radius: 0px;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: var(--bg0);
+    color: var(--color12);
+    font-family: var(--font-bar);
+}
+
+/* Hardware */
+ .hardware-grouper .grouper-button {
+    border: none;
+    outline: none;
+    border-radius: 0px;
+    font-size: 16px;
+    color: var(--fg0);
+    transition: color 0.2s ease;
+    cursor: pointer;
+    padding: 4px 10px 3px 10px;
+    margin-bottom: 1px;
+}
+
+ .hardware-grouper .grouper-button:hover {
+    color: var(--color4);
+}
+
+
+ .hardware-grouper {
+    border: none;
+    outline: none;
+    border-radius: 0px;
+    background-color: transparent;
+    transition: background-color 0.25s ease;
+    cursor: pointer;
+    margin: 2px 0px 2px 2px;
+}
+
+ .hardware-grouper:hover {
+    background-color: rgba(var(--bg2-raw), 0.5);
+}
+ .cpu-widget, .memory-widget, .gpu-widget, .wifi-widget { 
+    padding: 0;
+    border: none;
+    transition: background-color 0.25s ease;
+    cursor: pointer;
+    margin: 2px 2px 2px 2px;
+    
+}
+
+ .cpu-widget {
+    background-color: var(--fg0);
+}
+
+ .gpu-widget {
+    background-color: var(--fg0);
+}
+
+ .memory-widget {
+    background-color: var(--fg0);
+}
+ .wifi-widget {
+    background-color: var(--fg0);
+}
+ .wifi-widget .icon {
+    font-family: var(--font-icon);
+}
+
+ .cpu-widget .icon, .memory-widget .icon, .gpu-widget .icon, .wifi-widget .icon { 
+    color: var(--fg0);
+    background-color: var(--bg0);
+    border-radius: 0px;
+    margin: 2px 4px 2px 2px;
+    font-size: 16px;
+    
+}
+ .cpu-widget .label, .memory-widget .label, .gpu-widget .label, .wifi-widget .label { 
+    color: var(--bg0);
+    padding-right: 4px;
+    
+}
+
+
+/* GlazeWM Tiling Direction Widget */
+ .glazewm-tiling-direction {
+    transition: background-color 0.25s ease;
+    cursor: pointer;
+    border: none; 
+    margin: 4px 0 4px 0;
+}
+ .glazewm-tiling-direction .btn {
+    border: none;
+    outline: none;
+    min-width: 32px;
+    max-width: 32px;
+    color: var(--color7);
+    font-size: 24px;
+}
+
+/* Quick Launch Widget */
+ .quick-launch-widget {
+    transition: background-color 0.25s ease;
+    cursor: pointer;
+    border: none; 
+    background-color: transparent;
+    border-radius: 0px;
+    margin: 2px 0 2px 0px;
+}
+ .quick-launch-widget .icon {
+    background-color: transparent;
+    border-radius: 0px;
+    margin: 2px 0px 2px 0px;
+    color: var(--fg0);
+    transition: color 0.25s ease;
+}
+ .quick-launch-widget .icon:hover {
+    color: var(--color3);
+}
+ .quick-launch-widget:hover {
+    background-color: rgba(var(--bg2-raw), 0.5);
+}
+
+
+ .quick-launch-popup .container {
+    background-color: var(--bg1);
+    border-radius: 0px;
+    border: 1px solid var(--bg2);
+}
+ .quick-launch-popup .search {
+    padding: 12px 16px;
+
+}
+ .quick-launch-popup .search .search-icon,
+ .quick-launch-popup .search .search-submit-icon {
+    color: var(--fg2);
+    font-family: var(--font-icon);
+    font-size: 18px;
+}
+ .quick-launch-popup .search .search-input {
+    margin: 0 8px;
+    padding: 4px 4px;
+    border: none;
+    background-color: rgba(var(--bg2-raw), 0.5);
+    border-radius: 0px;
+    font-family: var(--font-bar);
+    font-size: 18px;
+    color: var(--fg0);
+}
+ .quick-launch-popup .search .prefix {
+    margin-left: 10px;
+    padding: 0 4px;
+    border: none;
+    border-radius: 0px;
+    background-color: rgba(var(--bg2-raw), 0.5);
+    color: var(--color11);
+    font-family: var(--font-bar);
+    font-size: 16px;
+    font-weight: bold;
+}
+ .quick-launch-popup .results {
+    padding: 8px;
+}
+ .quick-launch-popup .results-list-view {
+    font-family: var(--font-bar);
+    font-size: 16px;
+    color: var(--fg1);
+}
+ .quick-launch-popup .results-list-view .description {
+    font-family: var(--font-bar);
+}
+ .quick-launch-popup .results-list-view::item {
+    margin: 4px 8px;
+    padding: 12px;
+    border-radius: 0px;
+}
+
+ .quick-launch-popup .results-list-view::item:hover {
+    background-color: rgba(var(--bg2-raw), 0.25);
+    transition: background-color 0.25s ease;
+}
+ .quick-launch-popup .results-list-view::item:selected {
+    background-color: rgba(var(--bg2-raw), 0.4);
+}
+
+ .quick-launch-popup .results-empty-text {
+    color: var(--fg0);
+    font-family: var(--font-bar);;
+    font-size: 16px;
+}
+ .quick-launch-popup .preview {
+    margin: 12px;
+    padding: 16px;
+    background-color: var(--bg1);
+    border-radius: 10px;
+    transition: background-color 0.25s ease;
+}
+
+/* Wallpapers Widget */
+ .wallpapers-widget {
+    transition: background-color 0.25s ease;
+    cursor: pointer;
+    border: none; 
+    background-color: transparent;
+    margin: 2px 0 2px 0;
+    border-radius: 0px;
+}
+
+ .wallpapers-widget .icon {
+    font-size: 19px;
+    color: var(--fg0);
+    background-color: transparent;
+    border-radius: 0px;
+    margin: 2px 0 2px 0;
+    transition: color 0.25s ease;
+}
+
+ .wallpapers-widget:hover {
+    background-color: rgba(var(--bg2-raw), 0.5);
+}
+ .wallpapers-widget .icon:hover {
+    color: var(--color11);
+}
+
+.wallpapers-gallery-window {
+    background-color: var(--bg1);
+    border-radius: 0px;
+    border: 1px solid var(--bg2);
+}
+
+ .wallpapers-gallery-image {
+    border: 2px solid transparent;
+    border-radius: 0px;
+}
+ .wallpapers-gallery-image.focused {
+    border: 2px solid var(--fg0);
+    border-radius: 0px;
+}
+.wallpapers-gallery-buttons {
+    background-color: var(--fg0);
+    color: var(--bg1);
+    font-weight: 600;
+    border: none;
+    font-size: 14px;
+    padding: 8px 0;
+    border-radius: 0px;
+    margin:0 4px 8px 4px;
+    width: 200px;
+}
+.wallpapers-gallery-buttons:hover {
+    background-color: var(--fg1);
+}
+
+/* Notifications Widget */
+ .notification-widget {
+    cursor: pointer;
+    border: none; 
+    margin: 2px 2px 2px 2px;
+    transition: background-color 0.2s ease;
+}
+ .notification-widget .icon {
+    color: var(--fg0);
+    transition: color 0.2s ease;
+    border-radius: 10px;
+}
+ .notification-widget .icon:hover {
+    color: var(--color12);
+}
+ .notification-widget:hover {
+    background-color: rgba(var(--bg2-raw), 0.5);
+}
+
+/* Power Menu Widget */
+ .power-menu-widget .label {
+    color: var(--fg0);
+    font-size: 18px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 0px;
+    transition: color 0.2s ease;
+    border-radius: 0px;
+}
+ .power-menu-widget .label:hover {
+    color: var(--color9);
+    cursor: pointer;
+}
+ .power-menu-widget:hover {
+    background-color: rgba(var(--bg2-raw), 0.5);
+}
+ .power-menu-widget {
+    margin: 2px 0px 2px 0px;
+    padding: 0px 1px;
+}
+
+/*POWER MENU POPUP*/
+.uptime {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: var(--fg2);
+    font-weight: 600;
+    font-family: var(--font-bar);
+}
+.power-menu-popup .button {
+    width: 160px;
+    height: 240px;
+    border-radius: 0px;
+    background-color: var(--bg1);
+    font-family: var(--font-bar);
+    border-radius: 0px;
+    color: white;
+    border: 1px solid var(--bg2);
+    margin: 0 2px;
+    transition: background-color 0.25s ease;
+ 
+}
+.power-menu-popup .button.hover {
+    background-color: var(--bg2);
+}
+.power-menu-popup .button .label {
+    margin-bottom: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--fg1);
+    font-family: var(--font-bar);
+}
+.power-menu-popup .button .icon {
+    font-size: 64px;
+    padding-top: 32px;
+    color: var(--fg0);
+    font-weight: 0;
+    margin-bottom: 40px;
+}
+.power-menu-popup .button.cancel .icon {
+    color: var(--color1);
+}
+.power-menu-popup .button.cancel .label {
+    color: rgba(var(--color1-raw), 0.8);
+}
+
+
+
