@@ -1,4 +1,5 @@
 <img width="1919" height="1079" alt="grafik" src="https://github.com/user-attachments/assets/6147b0a8-e9ca-4579-a4c3-d2b8b60b0d8e" />
+<img width="1919" height="1079" alt="grafik" src="https://github.com/user-attachments/assets/26d527dc-9519-441d-b829-c41ef3fb46d1" />
 
 
 # Windows 11 Tokyo Night Storm Dotfiles
