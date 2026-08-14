@@ -16,12 +16,18 @@ The following core applications are required for this setup to function properly
 * **Nilesoft Shell** – Used for the customized context menu.
 * **Fastfetch & Winfetch** – Used to display system statistics aesthetically.
 
-### Recommended Apps (For a unified theme)
+### Recommended Apps (For a unified theme/Terminal applications)
 * **Firefox**
 * **Discord**
 * **VSCodium**
 * **Sublime Text**
 * **Spotify + Spicetify**
+* **clock-rs**
+* **pipes-rs**
+* **rbonsai**
+* **rs-matrix**
+* **btm**
+* **btop4win**
 
 > **Important:** Download the recommended applications directly from their official websites. Avoid using the Microsoft Store, as store-packaged apps can restrict custom theming.
 
