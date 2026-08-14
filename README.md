@@ -43,7 +43,15 @@ The following core applications are required for this setup to function properly
 ---
 
 ## Important Configuration Steps
-Before using YASB, Fastfetch and Winfetch you must update the file paths to match your correct directories:
+Before using Firefox, YASB, Fastfetch and Winfetch you must update the file paths to match your correct directories and/or make a few preparations:
+
+**Firefox**
+1. Type `about:config` in your Firefox searchbar.
+2. search for `toolkit.legacyUserProfileCustomizations.stylesheets` and set it to `true`.
+3. Paste `FirefoxColor@mozilla.com.xpi` into your Firefox profiles extensions folder.
+4. Clone this repository and paste the entire `chrome` folder into your Firefox profile directory.
+5. Open firefox and install the Firefox color Extension by Firefox.
+6. Activate vertical tabs.
 
 **YASB**
 1. Open the **YASB** configuration file (`config.yaml`).
