@@ -21,7 +21,8 @@ The following core applications are required for this setup to function properly
 * **[GlazeWM](https://github.com/glzr-io/glazewm)** – Used for tiling window management.
 * **[YASB (Yet Another Status Bar)](https://yasb.dev/)** – Used for the desktop status bar.
 * **[Nilesoft Shell](https://nilesoft.org/)** – Used for the customized context menu.
-* **[Fastfetch](https://github.com/fastfetch-cli/fastfetch) & [Winfetch](https://github.com/lptstr/winfetch)** – Used to display system statistics aesthetically.
+* **[Fastfetch](https://github.com/fastfetch-cli/fastfetch)** – Used to display system statistics aesthetically.
+* **[Starship Prompt](https://starship.rs/)** - A minimal and fast cross-platform Terminal Prompt.
 
 ### Recommended Apps (For a unified theme/Other useful Tools)
 * **[Discord](https://discord.com/) + [Vencord](https://vencord.dev/)**
@@ -35,6 +36,7 @@ The following core applications are required for this setup to function properly
 * **[btm](https://github.com/clementtsang/bottom)**
 * **[btop4win](https://github.com/aristocratos/btop4win)**
 * **[cava](https://github.com/karlstav/cava)**
+* **[Winfetch](https://github.com/lptstr/winfetch)**
 
 > **Important:** Download the recommended applications directly from their official websites. Avoid using the Microsoft Store, as store-packaged apps can restrict custom theming.
 
