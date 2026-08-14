@@ -1,0 +1,87 @@
+{
+    "$help": "https://aka.ms/terminal-documentation",
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+    "centerOnLaunch": true,
+    "copyFormatting": "none",
+    "copyOnSelect": false,
+    "defaultProfile": "{c3c52240-903d-47d1-a2d2-1c4b4af7c113}",
+    "initialCols": 86,
+    "initialRows": 18,
+    "launchMode": "focus",
+    "newTabMenu": 
+    [
+        {
+            "type": "remainingProfiles"
+        }
+    ],
+    "newTabPosition": "afterLastTab",
+    "profiles": 
+    {
+        "defaults": 
+        {
+            "colorScheme": "Tokyo Storm",
+            "scrollbarState": "hidden"
+        },
+        "list": 
+        [
+            {
+                "altGrAliasing": true,
+                "antialiasingMode": "grayscale",
+                "background": null,
+                "closeOnExit": "automatic",
+                "colorScheme": "Tokyo Storm",
+                "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -nologo",
+                "cursorShape": "filledBox",
+                "experimental.retroTerminalEffect": false,
+                "font": 
+                {
+                    "cellHeight": "1",
+                    "cellWidth": "0.6",
+                    "face": "JetBrainsMono Nerd Font",
+                    "size": 12,
+                    "weight": "normal"
+                },
+                "foreground": null,
+                "guid": "{c3c52240-903d-47d1-a2d2-1c4b4af7c113}",
+                "hidden": false,
+                "historySize": 9001,
+                "icon": "ms-appx:///ProfileIcons/{61c54bbd-c2c6-5271-96e7-009a87ff44bf}.png",
+                "name": "Tokyo Storm",
+                "opacity": 100,
+                "padding": "8, 8, 8, 8",
+                "selectionBackground": null,
+                "snapOnInput": true,
+                "startingDirectory": "%USERPROFILE%",
+                "tabTitle": "TokyoStorm@Windows",
+                "useAcrylic": false
+            }
+        ]
+    },
+    "schemes": 
+    [
+        {
+            "background": "#24283B",
+            "black": "#1D202F",
+            "blue": "#7AA2F7",
+            "brightBlack": "#414868",
+            "brightBlue": "#7DA6FF",
+            "brightCyan": "#0DB9D7",
+            "brightGreen": "#B9F27C",
+            "brightPurple": "#BB9AF7",
+            "brightRed": "#FF7A93",
+            "brightWhite": "#C0CAF5",
+            "brightYellow": "#FF9E64",
+            "cursorColor": "#C0CAF5",
+            "cyan": "#7DCFFF",
+            "foreground": "#C0CAF5",
+            "green": "#9ECE6A",
+            "name": "Tokyo Storm",
+            "purple": "#BB9AF7",
+            "red": "#F7768E",
+            "selectionBackground": "#2E3C64",
+            "white": "#A9B1D6",
+            "yellow": "#E0AF68"
+        }
+    ],
+    "theme": "dark"
+}
