@@ -1,0 +1,412 @@
+theme: ''
+styleConstants:
+  - CornerRadius=0
+  - r2=0
+  - r3=0
+  - BorderThickness=0,0,0,0
+  - ElementCornerRadius=0
+  - ElementBorderThickness=0,0,0,0
+  - 'BG = #1f2335'
+  - 'BG2 = #24283b'
+  - 'BG3 = #24283b'
+  - 'Text = #c0caf5'
+  - 'Text2 = #a9b1d6'
+  - 'Button = #c0caf5'
+  - 'RED = #f7768e'
+  - 'Border = #24283b'
+  - 'ButtonTinted = #e0af68'
+  - 'ButtonHighlight = #3b4261'
+  - 'BLUE = #7aa2f7'
+  - 'MAGENTA = #bb9af7'
+  - 'CYAN = #7dcfff'
+  - 'ElementBorderBrush = #3b4261'
+controlStyles:
+  - target: Grid#NotificationCenterGrid
+    styles:
+      - Background:=$BG
+      - BorderThickness=1
+      - CornerRadius=$CornerRadius
+      - BorderBrush:=$ElementBorderBrush
+  - target: Grid#CalendarCenterGrid
+    styles:
+      - Background:=$BG
+      - BorderThickness=1
+      - CornerRadius=$CornerRadius
+      - Margin=0,6,0,6
+      - MinHeight=40
+      - BorderBrush:=$ElementBorderBrush
+  - target: ScrollViewer#CalendarControlScrollViewer
+    styles:
+      - Background:=$BG2
+      - CornerRadius=$r2
+      - Margin=-10,11,-10,-14
+      - BorderBrush:=$ElementBorderBrush
+      - BorderThickness=0
+  - target: Border#CalendarHeaderMinimizedOverlay
+    styles:
+      - Background:=$BG
+      - CornerRadius=$r2
+      - Margin=-10,-6,-10,-8
+      - Height=45
+      - BorderBrush:=$ElementBorderBrush
+      - BorderThickness=$ElementBorderThickness
+  - target: ActionCenter.FocusSessionControl#FocusSessionControl > Grid#FocusGrid
+    styles:
+      - Background:=$BG2
+      - CornerRadius=$r2
+      - Margin=6,7,6,6
+      - BorderThickness=$BorderThickness
+      - BorderBrush:=$BorderBrush
+  - target: MenuFlyoutPresenter
+    styles:
+      - Background:=$BG
+      - BorderThickness=$BorderThickness
+      - CornerRadius=$r3
+      - Padding=1,2,1,2
+      - BorderBrush:=$BorderBrush
+  - target: Border#JumpListRestyledAcrylic
+    styles:
+      - Background:=$BG
+      - BorderThickness=$BorderThickness
+      - CornerRadius=$r3
+      - Margin=-2,-2,-2,-2
+      - BorderBrush:=$BorderBrush
+  - target: Windows.UI.Xaml.Controls.Grid#ControlCenterRegion
+    styles:
+      - Background:=$BG
+      - CornerRadius=$CornerRadius
+      - BorderThickness=$BorderThickness
+      - BorderBrush:=$BorderBrush
+      - Height=auto
+      - MaxHeight:=400
+      - MinHeight:=320
+  - target: ContentPresenter#PageContent
+    styles:
+      - Background:=$BG
+  - target: ContentPresenter#PageContent > Grid > Border
+    styles:
+      - Background:=$BG
+      - CornerRadius=$r2
+      - Margin=8,0,8,2
+  - target: QuickActions.ControlCenter.AccessibleWindow#PageWindow > ContentPresenter > Grid#FullScreenPageRoot
+    styles:
+      - Background:=$BG
+  - target: QuickActions.ControlCenter.AccessibleWindow#PageWindow > ContentPresenter > Grid#FullScreenPageRoot > ContentPresenter#PageHeader
+    styles:
+      - Background:=$BG2
+      - CornerRadius=$r2
+      - Margin=7,7,7,7
+  - target: ScrollViewer#ListContent
+    styles:
+      - Background:=$BG
+      - CornerRadius=$r2
+      - Margin=8,0,8,0
+  - target: ActionCenter.FlexibleToastView#FlexibleNormalToastView
+    styles:
+      - Background:=$BG
+  - target: Border#ToastBackgroundBorder2
+    styles:
+      - Background:=$BG
+      - BorderThickness=$BorderThickness
+      - CornerRadius=0
+      - BorderBrush:=$BG
+  - target: JumpViewUI.SystemItemListViewItem > Grid#LayoutRoot > Border#BackgroundBorder
+    styles:
+      - Background:=Transparent
+      - CornerRadius=0
+  - target: JumpViewUI.JumpListListViewItem > Grid#LayoutRoot > Border#BackgroundBorder
+    styles:
+      - CornerRadius=0
+  - target: ActionCenter.FlexibleItemView
+    styles:
+      - CornerRadius=0
+  - target: Grid#NotificationCenterTopBanner
+    styles:
+      - Background:=$BG2
+      - CornerRadius=$r2
+      - Margin=6
+  - target: Windows.UI.Xaml.Controls.Grid#L1Grid > Border
+    styles:
+      - Background:=$BG
+  - target: Windows.UI.Xaml.Controls.ContentPresenter
+    styles:
+      - BorderThickness=1
+  - target: Windows.UI.Xaml.Controls.Button#FooterButton[AutomationProperties.Name=Edit quick settings]
+    styles:
+      - Margin=0,0,8,0
+      - CornerRadius=$r3
+  - target: Windows.UI.Xaml.Controls.Button[AutomationProperties.AutomationId=Microsoft.QuickAction.Battery]
+    styles:
+      - Margin=2,0,0,0
+      - CornerRadius=$r3
+  - target: Windows.UI.Xaml.Controls.Button#FooterButton[AutomationProperties.Name=All settings]
+    styles:
+      - Margin=0,0,-1,0
+      - CornerRadius=0
+      - BorderThickness=$BorderThickness
+  - target: Windows.UI.Xaml.Controls.Button[AutomationProperties.AutomationId=Microsoft.QuickAction.Volume]
+    styles:
+      - CornerRadius=0
+  - target: Windows.UI.Xaml.Controls.Button#VolumeL2Button[AutomationProperties.Name=Select a sound output]
+    styles:
+      - CornerRadius=0
+  - target: Windows.UI.Xaml.Shapes.Rectangle#HorizontalTrackRect
+    styles:
+      - Height=10
+      - Fill:=$BG3
+      - RadiusY=0
+      - RadiusX=0
+  - target: Windows.UI.Xaml.Shapes.Rectangle#HorizontalDecreaseRect
+    styles:
+      - Height=10
+      - RadiusY=0
+      - RadiusX=0
+      - Margin=0,-10,-10,-10
+  - target: Windows.UI.Xaml.Controls.Primitives.Thumb#HorizontalThumb
+    styles:
+      - Visibility=Visible
+      - Height=14
+      - Width=20
+      - Margin=0
+  - target: Windows.UI.Xaml.Controls.Grid#MediaTransportControlsRegion
+    styles:
+      - Height=110
+      - CornerRadius=$CornerRadius
+      - BorderThickness=$BorderThickness
+      - Background:=$BG
+      - Margin=0,10,0,10
+      - BorderBrush:=$BorderBrush
+      - Grid.Row=1
+  - target: Windows.UI.Xaml.Controls.Grid#AlbumTextAndArtContainer
+    styles:
+      - Height=55
+      - MaxWidth:=150
+      - HorizontalAlignment=Left
+  - target: Windows.UI.Xaml.Controls.Grid#ThumbnailImage
+    styles:
+      - Visibility=1
+  - target: Windows.UI.Xaml.Controls.StackPanel#PrimaryAndSecondaryTextContainer
+    styles:
+      - VerticalAlignment=Center
+      - HorizontalAlignment=Left
+      - Margin=0,0,10,0
+  - target: Windows.UI.Xaml.Controls.StackPanel#PrimaryAndSecondaryTextContainer > Windows.UI.Xaml.Controls.TextBlock#Title
+    styles:
+      - TextAlignment=Center
+      - FontSize=18
+  - target: Windows.UI.Xaml.Controls.StackPanel#PrimaryAndSecondaryTextContainer > Windows.UI.Xaml.Controls.TextBlock#Subtitle
+    styles:
+      - TextAlignment=Center
+      - FontFamily=vivo Sans EN VF
+      - Margin=0,3,0,0
+      - FontWeight=600
+  - target: Windows.UI.Xaml.Controls.ListView#MediaButtonsListView
+    styles:
+      - VerticalAlignment=Center
+      - Height=20
+      - Margin=130,-60,0,0
+      - Width=Auto
+      - HorizontalAlignment=Right
+      - Visibility=2
+  - target: Windows.UI.Xaml.Controls.Primitives.RepeatButton#PreviousButton
+    styles:
+      - Width=40
+      - Height=40
+      - Margin=10,0,0,0
+  - target: Windows.UI.Xaml.Controls.Button#PlayPauseButton
+    styles:
+      - Width=40
+      - Height=40
+      - Margin=0
+  - target: Windows.UI.Xaml.Controls.Primitives.RepeatButton#NextButton
+    styles:
+      - Width=40
+      - Height=30
+      - Margin=0,0,10,0
+  - target: Windows.UI.Xaml.Controls.TextBlock#AppNameText
+    styles:
+      - FontFamily=vivo Sans EN VF
+      - FontSize=16
+  - target: Windows.UI.Xaml.Controls.Image#IconImage
+    styles:
+      - Height=20
+      - Width=20
+  - target: Grid#MediaTransportControlsRoot
+    styles:
+      - Background:=$BG
+  - target: Grid#ToastPeekRegion
+    styles:
+      - Background=$BG
+      - RenderTransform:=<TranslateTransform Y="-495" X="395" />
+      - Grid.Column=0
+      - Grid.Row=2
+  - target: Windows.UI.Xaml.Controls.CalendarViewDayItem > Windows.UI.Xaml.Controls.Border
+    styles:
+      - CornerRadius=0
+      - Margin=1,2,1,2
+  - target: Windows.UI.Xaml.Controls.CalendarViewDayItem
+    styles:
+      - CornerRadius=0
+  - target: Windows.UI.Xaml.Controls.Control > Windows.UI.Xaml.Controls.Border
+    styles:
+      - CornerRadius=0
+  - target: Windows.UI.Xaml.Controls.Primitives.CalendarViewItem
+    styles:
+      - CornerRadius=0
+  - target: Windows.UI.Xaml.Controls.ListViewHeaderItem
+    styles:
+      - Margin=50,6,50,2
+      - CornerRadius=0
+      - Height=35
+  - target: Windows.UI.Xaml.Controls.Button#SettingsButton
+    styles:
+      - CornerRadius=0
+  - target: Windows.UI.Xaml.Controls.Button#DismissButton
+    styles:
+      - CornerRadius=0
+  - target: Windows.UI.Xaml.Controls.StackPanel#CalendarHeader
+    styles:
+      - Margin=6,0,0,0
+  - target: Windows.UI.Xaml.Controls.ScrollContentPresenter#ScrollContentPresenter
+    styles:
+      - Margin=1,2,1,2
+  - target: Windows.UI.Xaml.Controls.Grid#WeekDayNames
+    styles:
+      - Background :=$BG3
+      - CornerRadius=0
+      - Margin=4,0,4,0
+      - Padding=0,-5,0,-3
+  - target: Windows.UI.Xaml.Controls.ListViewItem
+    styles:
+      - CornerRadius=$r3
+  - target: Windows.UI.Xaml.Controls.Grid#RootGrid > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter
+    styles:
+      - Background:=$BG
+      - BorderThickness=0
+      - CornerRadius=0
+  - target: Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.Border#ItemOpaquePlating
+    styles:
+      - Background :=$BG2
+      - BorderThickness=0
+      - CornerRadius=$r3
+  - target: Windows.UI.Xaml.Controls.Grid#StandardHeroContainer
+    styles:
+      - Margin=12,0,12,0
+      - CornerRadius=0
+      - Height=150
+  - target: Windows.UI.Xaml.Controls.Primitives.ScrollBar#VerticalScrollBar
+    styles:
+      - Visibility=1
+  - target: Windows.UI.Xaml.Controls.Grid#SliderContainer
+    styles:
+      - Margin=0-2,0,0
+  - target: Windows.UI.Xaml.Controls.Button#BackButton
+    styles:
+      - CornerRadius=$r3
+  - target: Windows.UI.Xaml.Shapes.Rectangle#OuterBorder
+    styles:
+      - RadiusX=0
+      - RadiusY=0
+      - Height=18
+  - target: Windows.UI.Xaml.Shapes.Rectangle#SwitchKnobOff
+    styles:
+      - RadiusY=0
+      - RadiusX=0
+  - target: Windows.UI.Xaml.Controls.Border#SwitchKnobOn
+    styles:
+      - CornerRadius=0
+  - target: Windows.UI.Xaml.Shapes.Rectangle#SwitchKnobBounds
+    styles:
+      - RadiusX=0
+      - RadiusY=0
+      - Height=18
+  - target: ActionCenter.NotificationListViewItem
+    styles:
+      - Margin=5,2,5,3
+  - target: Windows.UI.Xaml.Controls.Grid[AutomationProperties.LocalizedLandmarkType=Footer]
+    styles:
+      - BorderThickness=0
+  - target: NetworkUX.View.SettingsListViewItem > Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter#Root
+    styles:
+      - CornerRadius=0
+  - target: Windows.UI.Xaml.Controls.ContentPresenter > Windows.UI.Xaml.Controls.Border
+    styles:
+      - BorderThickness=1
+  - target: Button#ClearAll
+    styles:
+      - AccessKey=x
+  - target: Button#ExpandCollapseButton
+    styles:
+      - AccessKey=e
+  - target: ControlCenter.PaginatedToggleButton#ToggleButton > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter
+    styles:
+      - CornerRadius=$r2
+      - BorderThickness=$ElementBorderThickness
+      - BorderBrush:=$ElementBorderBrush
+  - target: ControlCenter.PaginatedToggleButton#SplitL2Button > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter
+    styles:
+      - CornerRadius=0
+      - BorderThickness=$ElementBorderThickness
+      - BorderBrush:=$ElementBorderBrush
+  - target: Windows.UI.Xaml.Controls.Primitives.Thumb#HorizontalThumb > Windows.UI.Xaml.Controls.Border
+    styles:
+      - CornerRadius=0
+      - Background:=$Button
+      - BorderBrush:=$BG
+      - BorderThickness=$BorderThickness
+  - target: Windows.UI.Xaml.Controls.Primitives.Thumb#HorizontalThumb > Windows.UI.Xaml.Controls.Border > Windows.UI.Xaml.Shapes.Ellipse#SliderInnerThumb
+    styles:
+      - Visibility=Collapsed
+  - target: Windows.UI.Xaml.Controls.ToolTip > Windows.UI.Xaml.Controls.ContentPresenter#LayoutRoot
+    styles:
+      - Background:=$BG
+      - BorderBrush:=$BG
+      - BorderThickness=$BorderThickness
+      - CornerRadius=0
+  - target: Windows.UI.Xaml.Controls.Primitives.RepeatButton#PreviousButton > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter@CommonStates
+    styles:
+      - Foreground@Normal:=$BLUE
+      - Foreground@PointerOver:=$Button
+      - Foreground@Pressed:=$Button
+      - Foreground@Disabled:=$Button
+      - Background:=Transparent
+  - target: Windows.UI.Xaml.Controls.Button#PlayPauseButton > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter@CommonStates
+    styles:
+      - Foreground@Normal:=$Text
+      - Foreground@PointerOver:=$Button
+      - Foreground@Pressed:=$Button
+      - Foreground@Disabled:=$Button
+      - Background:=Transparent
+  - target: Windows.UI.Xaml.Controls.Primitives.RepeatButton#NextButton > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter@CommonStates
+    styles:
+      - Foreground@Normal:=$BLUE
+      - Foreground@PointerOver:=$Button
+      - Foreground@Pressed:=$Button
+      - Foreground@Disabled:=$Button
+      - Background:=Transparent
+  - target: Grid#ControlCenterRegion
+    styles:
+      - Grid.Row=0
+  - target: ControlCenter.MediaTransportControls
+    styles:
+      - VerticalAlignment=2
+      - Grid.Row=1
+      - Canvas.ZIndex=1
+  - target: Grid#RootGrid
+    styles:
+      - VerticalAlignment=3
+      - MinHeight=0
+  - target: ControlCenter.PaginatedToggleButton > Windows.UI.Xaml.Controls.ContentPresenter@CommonStates
+    styles:
+      - Background@Checked=$Button
+      - Background@CheckedPointerOver=$ButtonTinted
+      - Background@Normal=$BG3
+      - Background@PointerOver=$ButtonHighlighted
+  - target: Windows.UI.Xaml.Controls.Primitives.ToggleButton#DoNotDisturbButton > Grid > ContentPresenter
+    styles:
+      - Background:=$Text
+  - target: Button#StartButton > ContentPresenter
+    styles:
+      - Background:=$Text
+themeResourceVariables:
+  - ''
