@@ -28,6 +28,7 @@ The following core applications are required for this setup to function properly
 * **[rs-matrix](https://github.com/TitaniumBrain/rs-matrix)**
 * **[btm](https://github.com/clementtsang/bottom)**
 * **[btop4win](https://github.com/aristocratos/btop4win)**
+* **[cava](https://github.com/karlstav/cava)**
 
 > **Important:** Download the recommended applications directly from their official websites. Avoid using the Microsoft Store, as store-packaged apps can restrict custom theming.
 
