@@ -1,0 +1,148 @@
+theme: ''
+disableNewStartMenuLayout: ''
+styleConstants:
+  - CommonBgBrush=#1f2335
+  - 'BG = #1f2335'
+  - 'BG2 = #24283b'
+  - 'Text = #c0caf5'
+  - 'Text2 = #a9b1d6'
+  - CR = 0
+  - 'BorderMain = #3b4261'
+controlStyles:
+  - target: Border#AcrylicBorder
+    styles:
+      - Background:=$CommonBgBrush
+      - BorderThickness=1
+      - CornerRadius=$CR
+      - BorderBrush=$BorderMain
+  - target: Border#AcrylicOverlay
+    styles:
+      - Visibility=Collapsed
+  - target: Border#BorderElement
+    styles:
+      - Background:=$BG2
+      - BorderThickness=1
+      - CornerRadius=$CR
+      - BorderBrush=$BorderMain
+  - target: MenuFlyoutPresenter > Border
+    styles:
+      - Background:=$BG
+      - BorderThickness=1
+      - CornerRadius=$CR
+      - BorderBrush=$BorderMain
+  - target: Border#AppBorder
+    styles:
+      - Background:=$CommonBgBrush
+      - BorderThickness=1
+      - CornerRadius=$CR
+      - BorderBrush=$BorderMain
+  - target: Border#AccentAppBorder
+    styles:
+      - Background:=$CommonBgBrush
+      - BorderThickness=1
+      - CornerRadius=$CR
+      - BorderBrush=$BorderMain
+  - target: Border#LayerBorder
+    styles:
+      - Visibility=Collapsed
+  - target: Border#TaskbarSearchBackground
+    styles:
+      - Background:=$BG
+      - BorderThickness=1
+      - CornerRadius=$CR
+  - target: Border#ContentBorder@CommonStates > Grid#DroppedFlickerWorkaroundWrapper > Border
+    styles:
+      - Background@Normal:=$BG
+      - CornerRadius=$CR
+  - target: Button#ShowAllAppsButton > ContentPresenter@CommonStates
+    styles:
+      - Background@Normal:=$BG
+      - BorderThickness=1
+      - CornerRadius=$CR
+  - target: StartMenu.SearchBoxToggleButton > Grid > Border#BorderElement
+    styles:
+      - BorderBrush:=$BG
+      - BorderThickness=1
+  - target: StartDocked.NavigationPaneButton#UserTileButton > Grid@CommonStates > Border
+    styles:
+      - Background@Normal:=$BG
+      - CornerRadius=$CR
+  - target: StartDocked.AppListViewItem > Grid@CommonStates > Border
+    styles:
+      - Background:=$BG
+      - BorderBrush:=$BG
+      - BorderThickness=1
+      - Margin@Normal=4
+      - BorderBrush=$BorderMain
+  - target: StartDocked.NavigationPaneButton#PowerButton > Grid@CommonStates > Border
+    styles:
+      - Background:=$BG
+      - BorderBrush:=$BG
+      - BorderThickness=1
+      - Margin@Normal=4
+      - BorderBrush=$BorderMain
+  - target: ToolTip > ContentPresenter#LayoutRoot
+    styles:
+      - Background:=$BG
+  - target: Border#dropshadow
+    styles:
+      - CornerRadius=$CR
+      - Margin=-1
+  - target: Border#StartDropShadow
+    styles:
+      - CornerRadius=$CR
+      - Margin=-1
+  - target: Grid#TopLevelSuggestionsRoot
+    styles:
+      - Visibility=Collapsed
+  - target: TextBlock#Text
+    styles:
+      - Foreground=$Text
+  - target: Microsoft.UI.Xaml.Controls.DropDownButton > Grid#RootGrid
+    styles:
+      - Background:=$BG
+      - BorderBrush:=$BG
+      - BorderThickness=1
+      - CornerRadius=$CR
+      - BorderBrush=$BorderMain
+  - target: Button > Grid@CommonStates > Border
+    styles:
+      - BorderThickness=1
+      - CornerRadius=$CR
+  - target: DropDownButton
+    styles:
+      - Background:=$BG
+  - target: Button#Header > Border#Border@CommonStates
+    styles:
+      - CornerRadius=$CR
+  - target: StartMenu.FolderModal > Grid > Border
+    styles:
+      - CornerRadius=$CR
+      - Background:=$CommonBgBrush
+      - BorderBrush:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.8\"/>
+  - target: ListViewItem > Grid#ContentBorder@CommonStates
+    styles:
+      - CornerRadius=$CR
+      - BorderBrush = <RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.8\"/>
+      - BorderBrush@PointerOver:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"1\"/>
+      - Background:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0\"/>
+      - Background@PointerOver:=<RevealBorderBrush Color=\"Transparent\" TargetTheme=\"1\" Opacity=\"0.9\"/>
+  - target: Windows.UI.Xaml.Controls.Grid#GridViewContainer
+    styles:
+      - Background = $BG
+  - target: Windows.UI.Xaml.Controls.TextBlock
+    styles:
+      - Foreground = $Text
+  - target: StartMenu.CategoryControl
+    styles:
+      - CornerRadius=$CR
+themeResourceVariables:
+  - ''
+webContentStyles:
+  - target: ''
+    styles:
+      - ''
+webContentCustomJs: ''
+resourceVariables:
+  - variableKey: ''
+    value: ''
