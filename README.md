@@ -1,9 +1,3 @@
-  ______      __                  _____ __                     
- /_  __/___  / /____  ______     / ___// /_____  _________ ___ 
-  / / / __ \/ //_/ / / / __ \    \__ \/ __/ __ \/ ___/ __ `__ \
- / / / /_/ / ,< / /_/ / /_/ /   ___/ / /_/ /_/ / /  / / / / / /
-/_/  \____/_/|_|\__, /\____/   /____/\__/\____/_/  /_/ /_/ /_/ 
-               /____/                                                                              
 # Windows 11 Tokyo Night Storm Dotfiles
 
 A complete Windows 11 desktop customization (rice) themed around the Storm variant of the popular Tokyo Night color palette.
